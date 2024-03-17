@@ -1,0 +1,53 @@
+@import "vendors";
+
+/* START ELMENNTS */
+
+.header {
+    background: pink;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 30px 0;
+
+    h1 {
+        color: var(--fourth-color);
+        font-size: 2.3rem;
+        text-shadow: $text_shadow;
+    }
+}
+
+.row {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    padding: 30px
+}
+
+.container {
+    // @include config();
+    margin: auto;
+    width: 80%;
+
+    .content {
+        // @include config();
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .img_content{
+            // @include config();
+            width: 20%;
+        }
+        .par_content{
+            line-height: 25px;
+            text-align: justify;
+            text-indent: 50px;
+            width: 80%;
+            h1{
+                font-size: 2rem;
+                margin: 15px;
+            }
+        }
+    }
+}
+
+/* END ELMENNTS */
